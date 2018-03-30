@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor.SceneManagement;
-
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour {
 	public GameObject panelMenu;
@@ -28,14 +27,13 @@ public class Menu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (EditorSceneManager.GetActiveScene().buildIndex == 0 && !panelMenu.activeSelf) {
+		if (SceneManager.GetActiveScene().buildIndex == 0 && !panelMenu.activeSelf) {
 			if (Input.anyKey) {
 				txtInicio.SetActive (false);
 				panelMenu.SetActive (true);
 			}
 		}
 	}
-
 	public void BotonNuevaPartida(){
 		//Comprobar si existen datos guardados
 		if (PlayerPrefs.GetInt ("JuegoGuardado",1) == 1) {
@@ -49,7 +47,7 @@ public class Menu : MonoBehaviour {
 		//Borrar Datos Guardados
 		
 		//Cargar escena inicial (Mapa)
-		
+		SceneManager.LoadScene("Main");
 
 	}
 	
