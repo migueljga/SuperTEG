@@ -14,6 +14,10 @@ TagManager:
   - ExplosionFX
   - HealthBar
   - Outscreen
+  - Arrow
+  - Stone
+  - Spear
+  - Fruit
   layers:
   - Default
   - TransparentFX
@@ -28,7 +32,7 @@ TagManager:
   - Enemies
   - Pickups
   - Ground
-  - 
+  - Bullets
   - 
   - 
   - 

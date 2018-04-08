@@ -52,9 +52,9 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\characters\Enemy.cs" />
-     <Compile Include="Assets\Scripts\characters\Flecha.cs" />
      <Compile Include="Assets\Scripts\characters\PlayerControl.cs" />
-     <Compile Include="Assets\Scripts\Enviroment\Nubes.cs" />
+     <Compile Include="Assets\Scripts\characters\Shot.cs" />
+     <Compile Include="Assets\Scripts\Enviroment\Clouds.cs" />
      <Compile Include="Assets\Scripts\GameSetup\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\GameSetup\GameManager.cs" />
      <Compile Include="Assets\Scripts\GameSetup\Pauser.cs" />
